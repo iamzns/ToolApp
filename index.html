@@ -7,12 +7,14 @@
 </head>
 <body>
     <h1>s</h1>
-    <pre class="wx" style="visibility: hidden;">
+    <pre id="wx" class="wx" style="visibility: hidden;">
         wx_{"UniCode":"9bb6d4caf9ee44719951386ee4c672b1","ExpireTime":""}_wx
     </pre>
     
     <script>
-        window.parent.postMessage('爸爸你好','https://goodwork123.gitee.io/toolapp')
+        var result = document.getElementById('wx').innerHTML;
+        console.log(result);
+        window.parent.postMessage(result,'https://goodwork123.gitee.io/toolapp')
     </script>
 </body>
 </html>
